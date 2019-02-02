@@ -25,7 +25,7 @@
                 if (empty($vars['object']->_id)) {
                     $title = 'What did you listen to?';
                 } else {
-                    $title = 'Edit what you listend to';
+                    $title = 'Edit what you listened to';
                 }
 
                 if (!empty($this->xhr)) {
