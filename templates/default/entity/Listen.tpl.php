@@ -29,7 +29,7 @@
 			<?php } else if ($vars['object']->listenType == 'podcast') { ?>
 			<i class="fas fa-rss"></i>
 			<?php } else if ($vars['object']->listenType == 'audiobook') { ?>
-			<i class="fas fa-book-reader"></i>
+			<i class="fas fa-book"></i>
 			<?php }; ?>
 			</span>
 			<!--End type icon-->
@@ -116,7 +116,7 @@
 <?php } else if ($vars['object']->listenType == 'podcast') { ?>
 <i class="fas fa-rss"></i>
 <?php } else if ($vars['object']->listenType == 'audiobook') { ?>
-<i class="fas fa-book-reader"></i>
+<i class="fas fa-book"></i>
 <?php }; ?>
 </span>
 <!--End type icon-->
