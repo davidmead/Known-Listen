@@ -75,24 +75,6 @@
 
                 ?>
                 <div class="content-form">
-                    <style>
-                        .listenType-block {
-                            margin-bottom: 1em;
-                        }
-						a.listenType {
-                            background-color: #fff;
-                            background-image: none;
-                            border: 1px solid #cccccc;
-                            box-shadow: none;
-                            text-shadow: none;
-                            color: #555555;
-                        }
-
-                        .listenType .caret {
-                                border-top: 4px solid #555;
-                        }
-
-                    </style>
                     <p><label for="title">Title</label>
                     <input type="text" name="title" id="title" placeholder="Title of the song, podcast, album, etc." value="<?= htmlspecialchars($title) ?>" class="form-control"/></p>
 
@@ -109,53 +91,6 @@
   <option data-listenType="podcast" value="podcast" <?php if ($listenType == 'podcast' ) echo 'selected' ; ?>>podcast</option>
   <option data-listenType="audiobook" value="audiobook" <?php if ($listenType == 'audiobook' ) echo 'selected' ; ?>>audio book</option>
 </select></p>
-
-
-
-
-
-
-
-<!-- styled listen type -->
-<!--
-                    <label for="listenType-id">Type</label>
-                    <div class="listenType-block">
-                        <input type="hidden" name="listenType" id="listenType-id" value="<?= $listenType ?>">
-                        <div id="listenType" class="listenType">
-                            <div class="btn-group">
-                                <a class="btn dropdown-toggle listenType" data-toggle="dropdown" href="#" id="listenType-button" aria-expanded="false">
-                                    Choose <span class="caret"></span>
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="#" data-listenType="song" class="listenType-option"><i class="fas fa-music"></i>song</a></li>
-                                    <li><a href="#" data-listenType="album" class="listenType-option"><i class="fas fa-music"></i>album</a></li>
-                                    <li><a href="#" data-listenType="stream" class="listenType-option"><i class="fas fa-rss"></i>stream</a></li>
-									<li><a href="#" data-listenType="podcast" class="listenType-option"><i class="fas fa-rss"></i>podcast</a></li>
-									<li><a href="#" data-listenType="audioBook" class="listenType-option"><i class="fas fa-book-reader"></i>audio book</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <script>
-                        $(document).ready(function () {
-                            $('.listenType-option').each(function () {
-                                if ($(this).data('listenType') == $('#listenType-id').val()) {
-                                    $('#listenType-button').html($(this).html() + ' <span class="caret"></span>');
-                                }
-                            })
-                        });
-                        $('.listenType-option').on('click', function () {
-                            $('#listenType-id').val($(this).data('listenType'));
-                            $('#listenType-button').html($(this).html() + ' <span class="caret"></span>');
-                            $('#listenType-button').click();
-                            return false;
-                        });
-
-                        $('#listenType-id').on('change', function () {
-                        });
-                    </script>
-                    -->
-                    <!-- end styled watch type -->
 
                     <p><label for="listenAuthor">Artist</label>
                     <input type="text" name="listenAuthor" id="listenAuthor" placeholder="Who is the artist?" value="<?= htmlspecialchars($listenAuthor) ?>" class="form-control"/></p>
